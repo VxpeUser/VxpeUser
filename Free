@@ -1,0 +1,22 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bombastic", "Sentinel")
+
+local Tab = Window:NewTab("Main")
+local MainSection = Main:NewSection("Character")
+
+-- Scripts
+
+-- Sliders(Main)
+MainSection:NewSlider("Walkspeed", "Slider - Character Walkspeed", 360, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+-- Buttons(Main)
+MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end) 
+
+-- Dropdowns(Main)
+MainSection:NewDropdown("Dance", "Dance:Funny", {"100", "Default -- Default = 16", "9"}, function(currentOption)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = currentoption
+end)
