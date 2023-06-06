@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Bombastic", "Sentinel")
 
 local Tab = Window:NewTab("Main")
-local MainSection = Main:NewSection("Character")
+local MainSection = MainTab:NewSection("Character")
 
 -- Scripts
 
