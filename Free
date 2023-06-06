@@ -7,7 +7,7 @@ local MainSection = Main:NewSection("Character")
 -- Scripts
 
 -- Sliders(Main)
-MainSection:NewSlider("Walkspeed", "Slider - Character Walkspeed", 360, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+MainSection:NewSlider("Walkspeed", "Slider - Character Walkspeed", 360, 16, function(s) -- 360 (MaxValue) | 16 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
