@@ -1,10 +1,7 @@
-if game.PlaceId = then
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-_G.AutoTap = true
+local w = library:CreateWindow("Main") -- Creates the window
+local b = w:CreateFolder("Main") -- Creates the folder(U will put here your buttons,etc)
 
-if _G.AutoTap = true then
-  print(Hello World!)
-else
-  print(Hello World?)
+b:Button("VapeV4",function()  loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end)
-
