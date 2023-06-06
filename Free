@@ -14,9 +14,4 @@ end)
 -- Buttons(Main)
 MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end) 
-
--- Dropdowns(Main)
-MainSection:NewDropdown("Dance", "Dance:Funny", {"100", "Default -- Default = 16", "9"}, function(currentOption)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = currentoption
 end)
