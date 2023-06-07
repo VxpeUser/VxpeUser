@@ -28,3 +28,15 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("🏡Main🏡", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
+
+local Slider = MainTab:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {16, 360},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "WalkSpeedSlider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
